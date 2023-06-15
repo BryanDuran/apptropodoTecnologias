@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   tools:context=".CreatePetFragment">
+
+   <LinearLayout
+      android:layout_width="300dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginBottom="16dp"
+      android:orientation="vertical">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Artropodo"
+          android:textAlignment="center"
+          android:textSize="24sp"
+          android:textStyle="bold" />
+
+      <EditText
+          android:id="@+id/nombre"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:ems="10"
+          android:hint="Nombre"
+          android:inputType="textPersonName" />
+
+      <EditText
+          android:id="@+id/nombreCientifico"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:ems="10"
+          android:hint="Nombre Cientifico"
+          android:inputType="textPersonName" />
+
+      <EditText
+          android:id="@+id/clasificacion"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:ems="10"
+          android:hint="Clasificacion"
+          android:inputType="textPersonName" />
+
+      <EditText
+          android:id="@+id/habitat"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:ems="10"
+          android:hint="Numero de patas"
+          android:inputType="numberDecimal" />
+
+      <Space
+         android:layout_width="match_parent"
+         android:layout_height="15dp" />
+
+      <Button
+          android:id="@+id/btn_add"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Agregar" />
+   </LinearLayout>
+</androidx.cardview.widget.CardView>

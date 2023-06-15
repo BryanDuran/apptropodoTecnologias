@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:backgroundTint="#3F51B5"
+
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:id="@+id/linearLayout"
+       android:layout_width="413dp"
+       android:layout_height="800dp"
+       android:layout_marginStart="16dp"
+       android:layout_marginTop="24dp"
+       android:layout_marginEnd="16dp"
+       android:layout_marginBottom="16dp"
+       android:background="@drawable/fondo"
+       android:orientation="vertical"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="104dp"
+          android:gravity="center"
+          android:orientation="horizontal">
+
+         <Space
+             android:layout_width="15dp"
+             android:layout_height="wrap_content" />
+
+         <Button
+             android:id="@+id/btn_add"
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="1"
+             android:backgroundTint="@color/purple_700"
+             android:text="agregar activity"
+             android:textSize="10sp"
+             app:cornerRadius="50dp" />
+
+         <SearchView
+             android:id="@+id/search"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@color/purple_500"
+             android:backgroundTint="#3F51B5"
+             android:queryHint="Buscar"
+             app:cornerRadius="100dp" />
+
+      </LinearLayout>
+
+      <Space
+          android:layout_width="match_parent"
+          android:layout_height="10dp" />
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/recyclerViewSingle"
+          android:layout_width="match_parent"
+          android:layout_height="519dp">
+
+      </androidx.recyclerview.widget.RecyclerView>
+
+   </LinearLayout>
+
+   <Button
+       android:id="@+id/btn_close"
+       android:layout_width="374dp"
+       android:layout_height="54dp"
+       android:layout_marginTop="50dp"
+       android:backgroundTint="#FF401F"
+       android:text="cerrar sesión"
+       app:cornerRadius="50dp"
+       app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="@+id/btn_add_fragment" />
+
+   <Button
+       android:id="@+id/btn_add_fragment"
+       android:layout_width="373dp"
+       android:layout_height="58dp"
+       android:layout_marginTop="600dp"
+       android:layout_weight="1"
+       android:backgroundTint="@color/purple_500"
+       android:text="Agregar Artropodo"
+       android:textSize="15sp"
+       app:cornerRadius="50dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

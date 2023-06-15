@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "605866757228",
+    "project_id": "artropodos-c2c50",
+    "storage_bucket": "artropodos-c2c50.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605866757228:android:bcfd8a4f4d000e7c521c49",
+        "android_client_info": {
+          "package_name": "com.pluartz.test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "605866757228-3nt8cg5hbl4j81of4fvu9a5tsfp6jqcj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNy7aFrSPYUC8Xdw-Mp7i6hjPxrgFdfE0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "605866757228-3nt8cg5hbl4j81of4fvu9a5tsfp6jqcj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
